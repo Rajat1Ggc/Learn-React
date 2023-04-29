@@ -1,0 +1,16 @@
+body {
+  background-color: bisque;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}

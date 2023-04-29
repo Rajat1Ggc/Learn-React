@@ -1,0 +1,17 @@
+.date {
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: gray;
+    color: white;
+    padding: 10px 20px;
+    margin: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.day {
+    font-size: 22px;
+    font-weight: 700;
+}
