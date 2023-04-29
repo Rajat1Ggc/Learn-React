@@ -1,0 +1,12 @@
+.coloum {
+    color: red;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box {
+    background-color: black;
+    width: 60%;
+    border: 1px solid white;
+    border-radius: 8px;
+}
