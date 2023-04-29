@@ -1,6 +1,5 @@
 import React from "react";
 import "./expenceDate.css";
-
 function ExpenceDate(props) {
     const month = props.date.toLocaleString('es-US', { month: 'short' });
     const year = props.date.getFullYear();
