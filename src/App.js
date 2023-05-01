@@ -1,39 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
 import Expenses from "./components/expenses";
 import "./App.css";
+import NewExpence from "./newExpences/newExpence";
+
+// import Submithundler from "./newExpences/expenceForm";
+let Dummy_expence = [
+  {
+    id: "1",
+    date: new Date(2022, 4, 5),
+    title: "afternoon ",
+    price: 88,
+  },
+  {
+    id: "1",
+    date: new Date(2022, 4, 5),
+    title: "afternoon ",
+    price: 88,
+  },
+  {
+    id: "1",
+    date: new Date(2022, 4, 5),
+    title: "afternoon ",
+    price: 88,
+  },
+  {
+    id: "1",
+    date: new Date(2022, 4, 5),
+    title: "afternoon ",
+    price: 88,
+  },
+];
 
 function App() {
-  let expence = [
-    {
-      id: "1",
-      date: new Date(2022, 4, 5),
-      title: "afternoon ",
-      price: 88,
-    },
-    {
-      id: "2",
-      date: new Date(2022, 5, 5),
-      title: "morning ",
-      price: 444,
-    },
-    {
-      id: "3",
-      date: new Date(2022, 6, 5),
-      title: "night ",
-      price: 440,
-    },
-    {
-      id: "4",
-      date: new Date(2022, 7, 5),
-      title: "evening ",
-      price: 4444,
-    },
-  ];
+  const [expences, setExpence] = useState(Dummy_expence);
+
+  const AddexpenceHundler = (expence) => {
+    const UpdatedArray = [expence, ...expences];
+    setExpence(UpdatedArray);
+  };
+
   return (
     <div>
-      <h2>let's started </h2>
+      <NewExpence OnAddExpence={AddexpenceHundler} />
       <div className="body">
-        <Expenses item={expence} />
+        <Expenses item={expences} />
       </div>
     </div>
   );

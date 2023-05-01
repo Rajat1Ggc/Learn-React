@@ -1,0 +1,38 @@
+.new-expence {
+  background: pink;
+  padding: 1rem;
+  margin: 2rem auto;
+  width: 50rem;
+  max-width: 90%;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+}
+
+.new-expence button {
+  font: inherit;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border: 1ps solid purple;
+  background-color: purple;
+  color: white;
+  border-radius: 12px;
+  margin: right 1rem;
+}
+
+.new-expence button:hover,
+.new-expence button:active {
+  background-color: purple;
+  border-color: purple;
+}
+
+.new-expence button.alterNative {
+  color: blueviolet;
+  border: transparent;
+  background-color: transparent;
+}
+
+.new-expence button.alterNative:hover,
+.new-expence button.alterNative:active {
+  background-color: pink;
+}

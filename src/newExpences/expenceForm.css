@@ -1,0 +1,27 @@
+.new-expence_controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.new-expence_controls label {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  display: block;
+
+}
+
+.new-expence_controls input {
+  font-size: inherit;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1ps solid #ccc;
+  width: 20rem;
+  max-width: 100%;
+}
+
+.new-expence_actions {
+  text-align: right;
+}
